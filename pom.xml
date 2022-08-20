@@ -97,6 +97,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>authorization-micro-service</finalName>
 	</build>
 
 </project>
