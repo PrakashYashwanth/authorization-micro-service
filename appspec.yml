@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/yash-ppm-authorization:1"
+        LoadBalancerInfo:
+          ContainerName: "yash-ecr-authorization-micro-service"
+          ContainerPort: "8100"
+        PlatformVersion: "LATEST"
