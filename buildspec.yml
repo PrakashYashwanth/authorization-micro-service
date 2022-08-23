@@ -8,7 +8,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 860061945305.dkr.ecr.ap-south-1.amazonaws.com
-      - IMAGE_NAME=yash-ecr-authorization-micro-service
+      - IMAGE_NAME=yash-ecr-authorization-micro-service:latest
       - IMAGE_URI=860061945305.dkr.ecr.ap-south-1.amazonaws.com/yash-ecr-authorization-micro-service:latest
       - CONTAINER_NAME=authorization-micro-service
   build:
@@ -24,7 +24,7 @@ phases:
       - echo $(docker images)
       - docker tag $IMAGE_NAME $IMAGE_URI
       - echo Pushing docker image
-      - docker push $IMAGE_URI
+      - docker push $IMAGE_URI:latest
       - echo push completed
       - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $IMAGE_URI > imagedefinitions.json
 artifacts:
