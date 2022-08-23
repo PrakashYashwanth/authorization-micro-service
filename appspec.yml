@@ -5,6 +5,6 @@ Resources:
       Properties:
         TaskDefinition: "arn:aws:ecs:ap-south-1:860061945305:task-definition/yash-ppm-auth-task:3"
         LoadBalancerInfo:
-          ContainerName: "yash-ecr-authorization-micro-service"
+          ContainerName: "authorization-micro-service"
           ContainerPort: "8100"
         PlatformVersion: "LATEST"

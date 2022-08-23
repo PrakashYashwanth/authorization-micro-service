@@ -6,3 +6,5 @@
 2022-08-22_12-50-58 [main] ERROR c.a.exception.GlobalExceptionHandler - message
 2022-08-22_12-50-58 [SpringApplicationShutdownHook] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 2022-08-22_12-50-58 [SpringApplicationShutdownHook] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2022-08-22_20-21-08 [http-nio-8100-exec-4] ERROR com.auth.config.JwtRequestFilter - JWT Token has expired
+2022-08-22_20-21-08 [http-nio-8100-exec-4] ERROR c.a.c.JwtAuthenticationController - Token is Not Valid/Expired
